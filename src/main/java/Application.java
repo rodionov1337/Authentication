@@ -6,7 +6,7 @@ public class Application {
     public static void main(String[] args) throws RocksDBException {
         Auth auth = new Auth();
         while (true) {
-            System.out.println("For login enter 1, for register enter 2");
+            System.out.println("For login enter <1> \nFor register enter <2>");
             Scanner in = new Scanner(System.in);
             int mode = in.nextInt();
             switch (mode) {

@@ -18,11 +18,14 @@ public class Auth {
             String password = in.nextLine();
             byte[] passHash = Hash.hash(password.getBytes());
             byte[] dbHash = db.get(login.getBytes());
-            if (Arrays.equals(passHash, dbHash)) System.out.println("You entered");
+            if (Arrays.equals(passHash, dbHash)) System.out.println("###########\nYou entered \n###########");
             else {
                 System.out.println("Not correct password");
                 login();
             }
+        }
+        else {
+            System.out.println("No user with login " + login);
         }
     }
     void register() throws RocksDBException {
