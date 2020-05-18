@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Auth {
-    DB db = new Database("/Users/your_dream/Documents/Idea/Idea_Projects/lab_6/db");
+    DB db = new Database("");
 
     public Auth() throws RocksDBException {
     }
