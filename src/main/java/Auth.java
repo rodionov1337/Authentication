@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Auth {
-    DB db = new Database("");
+    DB db = new Database("");// enter path to database
 
     public Auth() throws RocksDBException {
     }
